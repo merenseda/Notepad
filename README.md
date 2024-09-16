@@ -1,7 +1,7 @@
 # Notepad
 <h3>Türkçe</h3>
 Bu proje sql veritabanı kullanılarak yapılmıştır. <br>
-<kbd>notes</kbd> tablosunu oluşturmak için gerekli sql sorgusu <kbd>SQL SORGUSU - SQL QUERY.txt</kbd> dosyası içinde bulunmaktadır. <br>
+<kbd>notes</kbd> tablosunu oluşturmak için gerekli sql sorgusu <kbd>SQL SORGUSU.txt</kbd> dosyası içinde bulunmaktadır. <br>
 Projenin çalışabilmesi için <kbd>config/database.php</kbd> dosyasını düzenlemeniz gerekmektedir.<br>
 
 <h3>English</h3>

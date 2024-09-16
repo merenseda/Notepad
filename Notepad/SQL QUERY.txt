@@ -1,0 +1,8 @@
+CREATE TABLE `notes` (
+  `id` int NOT NULL,
+  `title` varchar(25) COLLATE utf8mb4_general_ci NOT NULL,
+  `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `file_path` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `create_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `noteColor` varchar(7) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '#4a4a4a'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

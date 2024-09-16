@@ -1,0 +1,195 @@
+.footer {
+    border-radius: 12px;
+    /* Köşeleri yuvarlatır */
+}
+
+.ql-container {
+    border-radius: 5px;
+    /* İstediğiniz yuvarlaklık */
+    overflow: hidden;
+    /* İçeriğin kenarları aşmaması için */
+}
+
+/* Quill editörünün araç çubuğunun kenarlarını yuvarlatın */
+.ql-toolbar {
+    border-radius: 5px;
+    /* İstediğiniz yuvarlaklık */
+    overflow: hidden;
+    /* İçeriğin kenarları aşmaması için */
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+nav {
+    margin: 0 auto 2pt auto;
+    border-radius: 20px 20px 2px 2px;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    border-radius: 8px;
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+}
+
+nav li:hover>ul {
+    display: block;
+}
+
+nav ul a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.cerceve {
+    border-radius: 20px 20px 20px 20px;
+    border: 10px;
+    margin: 2pt 5%;
+    background-color: #f4f4f4;
+    padding: 2pt;
+}
+
+.sınır {
+    max-height: 16rem;
+    /* Kartın içeriği için maksimum yüksekliği ayarlayın */
+    overflow: hidden;
+    /* Taşan içeriği gizle */
+    text-overflow: ellipsis;
+    /* Taşan metni "..." ile kısalt */
+    display: -webkit-box;
+    /* Webkit tarayıcılar için */
+    line-clamp: 3;
+    -webkit-line-clamp: 7;
+    /* Görüntülenecek maksimum satır sayısı */
+    -webkit-box-orient: vertical;
+    /* Satır yönünü dikey olarak ayarla */
+}
+
+/*----------------------------------------------------------------------------------
+
+/* Mesajın yukarıdan kayarak gelmesi */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mesajın solarak kaybolması */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.alert {
+    animation: slideDown 0.5s ease-out;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 10px 20px;
+    /* Daha küçük padding */
+    font-size: 14px;
+    /* Daha küçük yazı boyutu */
+    border-radius: 5px;
+    /* Köşe yuvarlama */
+    max-width: 300px;
+    /* Maksimum genişlik */
+    text-align: center;
+    /* Merkezi hizalama */
+}
+
+/* Fade out animasyonu uygulanırken elementin display'ini none yap */
+.alert.fade-out {
+    animation: fadeOut 2s ease-out forwards;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+.note-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.note-image {
+  max-width: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.note-content {
+    flex-grow: 1;
+    overflow: auto; /* İçeriğin taşması durumunda kaydırma çubuğu gösterir */
+  }
+  
+  .note-content p {
+    margin: 0;
+  }
+  
+/*----------------------------------------------------------------------------------*/
+
+/* Modal Dialog Boyutları */
+.custom-modal-dialog {
+    max-width: 90%; /* Modal'ın genişliği */
+    margin: 0rem auto; /* Üst ve alt margin */
+}
+
+/* Modal İçeriği */
+.custom-modal-content {
+    height: 80%; /* Modal içeriğinin yüksekliği */
+    display: flex;
+    flex-direction: column;
+    background-color: #343a40; /* bg-dark için uygun arka plan rengi */
+}
+
+/* Modal Body */
+.custom-modal-body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.custom-modal-body img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

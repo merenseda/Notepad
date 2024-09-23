@@ -2,7 +2,7 @@
 $host = 'localhost';//Host adı.
 $db   = 'notpad'; //Veritabanı adı.
 $user = 'root'; //Kullanıcı adı.
-$pass = 'meren1244'; //Varsa şifre yoksa boş.
+$pass = ''; //Varsa şifre yoksa boş.
 $charset = 'utf8mb4'; //Veri tabanı charseti.
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
